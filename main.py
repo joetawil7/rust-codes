@@ -26,7 +26,7 @@ async def newlocker(ctx):
     if ctx.guild.owner == ctx.message.author:
       global y 
       y = random.randint(1000,9999)
-      await ctx.guild.owner.send(y)
+      await ctx.guild.owner.send("New Locker Code: " + str(y))
 
 @bot.command(pass_context=True)
 async def lastlocker(ctx):
